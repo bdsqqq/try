@@ -1,6 +1,6 @@
 module.exports = {
-  extends: [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-  ],
+   extends: [
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended",
+   ],
 };

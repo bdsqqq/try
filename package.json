@@ -1,19 +1,19 @@
 {
-  "name": "@bdsqqq/try",
-  "version": "1.0.0",
-  "description": "Don't let the Try Catch Tower of Terror destroy your beautiful one liners.",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc"
-  },
-  "author": "Igor Bedesqui",
-  "license": "MIT",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.52.0",
-    "@typescript-eslint/parser": "^5.52.0",
-    "eslint": "^8.34.0",
-    "eslint-config-prettier": "^8.6.0",
-    "prettier": "^2.8.4",
-    "typescript": "^4.9.5"
-  }
+   "name": "@bdsqqq/try",
+   "version": "1.0.0",
+   "description": "Don't let the Try Catch Tower of Terror destroy your beautiful one liners.",
+   "main": "index.js",
+   "scripts": {
+      "build": "tsc"
+   },
+   "author": "Igor Bedesqui",
+   "license": "MIT",
+   "devDependencies": {
+      "@typescript-eslint/eslint-plugin": "^5.52.0",
+      "@typescript-eslint/parser": "^5.52.0",
+      "eslint": "^8.34.0",
+      "eslint-config-prettier": "^8.6.0",
+      "prettier": "^2.8.4",
+      "typescript": "^4.9.5"
+   }
 }
