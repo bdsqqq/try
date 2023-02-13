@@ -1,0 +1,14 @@
+{
+  "name": "@bdsqqq/try",
+  "version": "1.0.0",
+  "description": "Don't let the Try Catch Tower of Terror destroy your beautiful one liners.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Igor Bedesqui",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
