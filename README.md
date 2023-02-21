@@ -10,7 +10,7 @@ npm install @bdsqqq/try
 
 ```TS
 
-import { tryCatch } from "@bdsqqq/try";
+import { trytm } from "@bdsqqq/try";
 
 const mockPromise = () => {
   return new Promise<string>((resolve, _) => {
@@ -28,8 +28,8 @@ const mockPromiseThatFails = () => {
   });
 };
 
-const [data, error] = await tryCatch(mockPromise());
-const [data2, error2] = await tryCatch(mockPromiseThatFails());
+const [data, error] = await trytm(mockPromise());
+const [data2, error2] = await trytm(mockPromiseThatFails());
 ```
 
 ## Why does this exist?
