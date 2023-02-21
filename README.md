@@ -106,14 +106,7 @@ This approach solves the issue but can get a bit repetitive, another approach is
 
 ```TS
 
-function trytm = async <T>(promise: Promise<T>) => {
-   try {
-      const data = await promise;
-      return [data, null] as const;
-   } catch (error) {
-      return [null, error] as const;
-   }
-};
+import { trytm } from "@bdsqqq/try"
 
 async function awesome() {
    const [aData, aError] = await trytm(step1());
