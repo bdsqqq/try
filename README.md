@@ -1,4 +1,4 @@
-# Try
+# Try™
 
 Don't let the Try Catch Tower of Terror destroy your beautiful one liners.
 
@@ -106,7 +106,7 @@ This approach solves the issue but can get a bit repetitive, another approach is
 
 ```TS
 
-function tryCatch = async <T>(promise: Promise<T>) => {
+function trytm = async <T>(promise: Promise<T>) => {
    try {
       const data = await promise;
       return [data, null] as const;
@@ -116,13 +116,13 @@ function tryCatch = async <T>(promise: Promise<T>) => {
 };
 
 async function awesome() {
-   const [aData, aError] = await tryCatch(step1());
+   const [aData, aError] = await trytm(step1());
    if(aError) // ...
 
-   const [bData, bError] = await tryCatch(step2(aData));
+   const [bData, bError] = await trytm(step2(aData));
    if(bError) // ...
 
-   const [cData, cError] = await tryCatch(step3(bData));
+   const [cData, cError] = await trytm(step3(bData));
    if(cError) // ...
 
    // ...
@@ -137,7 +137,7 @@ I watched [a fireship short](https://www.youtube.com/watch?v=ITogH7lJTyE) and en
 I'll leave the source code here so you don't have to look for the one .ts file in the /src folder:
 
 ```TS
-export const tryCatch = async <T>(promise: Promise<T>) => {
+export const trytm = async <T>(promise: Promise<T>) => {
    try {
       const data = await promise;
       return [data, null] as const;
