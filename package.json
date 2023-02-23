@@ -1,18 +1,18 @@
 {
    "name": "@bdsqqq/try",
-   "version": "2.1.0",
+   "version": "2.1.1",
    "description": "Don't let the Try Catch Tower of Terror destroy your beautiful one liners.",
    "main": "lib/index.js",
    "types": "lib/index.d.ts",
    "scripts": {
-      "build": "tsc",
+      "build": "tsup src/index.ts --format cjs,esm --dts",
       "lint": "eslint tsconfig.eslint.json",
       "lint:fix": "eslint tsconfig.eslint.json --fix",
       "prettier": "prettier --write .",
       "test": "vitest"
    },
    "files": [
-      "lib/**/*"
+      "dist/**/*"
    ],
    "repository": {
       "type": "git",
@@ -27,6 +27,7 @@
       "eslint-config-prettier": "^8.6.0",
       "eslint-plugin-prettier": "^4.2.1",
       "prettier": "^2.8.4",
+      "tsup": "^6.6.3",
       "typescript": "^4.9.5",
       "vitest": "^0.28.5"
    }
