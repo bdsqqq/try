@@ -8,7 +8,8 @@
       "build": "tsc",
       "lint": "eslint tsconfig.eslint.json",
       "lint:fix": "eslint tsconfig.eslint.json --fix",
-      "prettier": "prettier --write ."
+      "prettier": "prettier --write .",
+      "test": "vitest"
    },
    "files": [
       "lib/**/*"
