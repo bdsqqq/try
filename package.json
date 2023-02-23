@@ -2,8 +2,9 @@
    "name": "@bdsqqq/try",
    "version": "2.1.1",
    "description": "Don't let the Try Catch Tower of Terror destroy your beautiful one liners.",
-   "main": "lib/index.js",
-   "types": "lib/index.d.ts",
+   "main": "dist/index.js",
+   "module": "dist/index.mjs",
+   "types": "dist/index.d.ts",
    "scripts": {
       "build": "tsup src/index.ts --format cjs,esm --dts",
       "lint": "eslint tsconfig.eslint.json",
