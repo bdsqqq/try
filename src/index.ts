@@ -5,6 +5,6 @@ export const trytm = async <T>(promise: Promise<T>) => {
       const data = await promise;
       return [data, null] as const;
    } catch (error) {
-      return [null, error] as const;
+      return [null, error as Error] as const;
    }
 };
