@@ -3,8 +3,8 @@
 export const trytm = async <T>(promise: Promise<T>) => {
    try {
       const data = await promise;
-      return [data, null] as const;
+      return [data, null, 'data'] as const;
    } catch (error) {
-      return [null, error] as const;
+      return [null, error, 'error'] as const;
    }
 };
