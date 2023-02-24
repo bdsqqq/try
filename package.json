@@ -9,7 +9,7 @@
       "build": "tsup src/index.ts --format cjs,esm --dts",
       "lint": "eslint tsconfig.eslint.json",
       "lint:fix": "eslint tsconfig.eslint.json --fix",
-      "prettier": "prettier --write .",
+      "prettier": "prettier --write ./src/**/*.{js,ts}",
       "test": "vitest"
    },
    "files": [
