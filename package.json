@@ -1,6 +1,6 @@
 {
    "name": "@bdsqqq/try",
-   "version": "2.1.2",
+   "version": "2.2.0",
    "description": "Don't let the Try Catch Tower of Terror destroy your beautiful one liners.",
    "main": "dist/index.js",
    "module": "dist/index.mjs",
