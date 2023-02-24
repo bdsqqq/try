@@ -38,9 +38,10 @@ describe("tryTm", () => {
             Promise.reject({ someNonErrorValue: "Maybe I'm not a failure" }),
          );
 
-      await trytm(promiseFn())
-         .catch(throwable => {
-            expect(throwable).toEqual({ someNonErrorValue: "Maybe I'm not a failure" })
-         })
+      await trytm(promiseFn()).catch((throwable) => {
+         expect(throwable).toEqual({
+            someNonErrorValue: "Maybe I'm not a failure",
+         });
+      });
    });
 });
