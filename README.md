@@ -130,12 +130,16 @@ I watched [a fireship short](https://www.youtube.com/watch?v=ITogH7lJTyE) and en
 I'll leave the source code here so you don't have to look for the one .ts file in the /src folder:
 
 ```TS
-export const trytm = async <T>(promise: Promise<T>) => {
+export const trytm = async <T>(
+   promise: Promise<T>,
+): Promise<[T, null] | [null, Error]> => {
    try {
       const data = await promise;
-      return [data, null] as const;
-   } catch (error) {
-      return [null, error] as const;
+      return [data, null];
+   } catch (throwable) {
+      if (throwable instanceof Error) return [null, throwable];
+
+      throw throwable;
    }
 };
 ```
