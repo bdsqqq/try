@@ -120,7 +120,25 @@ async function awesome() {
 
    // ...
 }
+```
 
+You can also use the `try$` function to collapse the error and data into a single object:
+
+```TS
+import { try$ } from "@bdsqqq/try"
+
+async function awesome() {
+   const a = await try$(step1());
+   if(a.error) // ...
+
+   const b = await try$(step2(a.data));
+   if(b.error) // ...
+
+   const c = await try$(step3(b.data));
+   if(c.error) // ...
+   
+   // ...
+}
 ```
 
 ### Why does this REALLY exist?
